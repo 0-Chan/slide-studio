@@ -1,0 +1,55 @@
+/* Typography and cards adapted from git-github-101; colors are deck-independent. */
+:root {
+  --studio-accent: #b45309;
+  --studio-background: #fafaf9;
+  --studio-foreground: #18181b;
+  --studio-muted: #52525b;
+  --studio-card-surface: rgba(255, 255, 255, 0.92);
+  --studio-card-border: rgba(24, 24, 27, 0.18);
+  --studio-card-shadow: rgba(24, 24, 27, 0.08);
+  --studio-image-overlay: rgba(255, 255, 255, 0.78);
+}
+html.dark {
+  --studio-accent: #f5a524;
+  --studio-background: radial-gradient(ellipse at 90% 0%, #46314e 0%, transparent 58%), radial-gradient(ellipse at 10% 95%, #152b46 0%, transparent 60%), #12121d;
+  --studio-foreground: #f4f4f5;
+  --studio-muted: #c4c4cc;
+  --studio-card-surface: rgba(24, 24, 27, 0.86);
+  --studio-card-border: rgba(244, 244, 245, 0.3);
+  --studio-card-shadow: rgba(0, 0, 0, 0.3);
+  --studio-image-overlay: rgba(0, 0, 0, 0.45);
+}
+.studio-background { background: var(--studio-background); }
+.studio-background-overlay { background: var(--studio-image-overlay); }
+.slidev-layout {
+  color: var(--studio-foreground);
+  background: transparent;
+}
+.slidev-layout h1 { color: var(--studio-accent); }
+.slidev-layout :not(pre) > code { color: var(--studio-accent); }
+.slidev-layout blockquote { border-left: none; }
+.slidev-layout .studio-subtitle { color: var(--studio-muted); opacity: 1; font-size: 1.2rem; margin-top: -0.3rem; margin-bottom: 1.5rem; }
+.studio-kicker { color: var(--studio-muted); font-family: "IBM Plex Mono", monospace; font-size: 0.8rem; letter-spacing: 0.12em; margin-bottom: 0.65rem; }
+.studio-card {
+  --studio-card-color: var(--studio-accent);
+  border: 1px solid var(--studio-card-border);
+  border-radius: 0.5rem;
+  padding: 1.4rem;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--studio-card-color) 9%, transparent), transparent 65%), var(--studio-card-surface);
+  box-shadow: 0 12px 30px var(--studio-card-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+.studio-card-title { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.8rem; }
+.studio-card--accent { border-color: color-mix(in srgb, var(--studio-accent) 70%, transparent); }
+.studio-card--violet { --studio-card-color: #8b5cf6; border-color: color-mix(in srgb, #8b5cf6 65%, transparent); }
+.studio-card--sky { --studio-card-color: #0ea5e9; border-color: color-mix(in srgb, #0ea5e9 65%, transparent); }
+.studio-card--emerald { --studio-card-color: #10b981; border-color: color-mix(in srgb, #10b981 65%, transparent); }
+.studio-card--rose { --studio-card-color: #f43f5e; border-color: color-mix(in srgb, #f43f5e 65%, transparent); }
+.studio-card--neutral { --studio-card-color: var(--studio-foreground); }
+.studio-toc { list-style: none !important; padding: 0 !important; margin: 0 !important; display: grid; gap: 0.85rem; }
+.studio-toc li { display: flex; align-items: center; gap: 1rem; margin: 0; padding: 0; }
+.studio-toc-number { display: inline-flex; width: 2rem; height: 2rem; align-items: center; justify-content: center; border: 1px solid var(--studio-card-border); border-radius: 50%; font-family: "IBM Plex Mono", monospace; font-size: 0.85rem; }
+.studio-toc .is-current { color: var(--studio-accent); font-weight: 600; }
+.studio-toc .is-current .studio-toc-number { background: var(--studio-accent); border-color: var(--studio-accent); color: var(--studio-background-color, #18181b); }
+.studio-toc .is-past { opacity: 0.4; }
+html:not(.dark) .studio-toc .is-current .studio-toc-number { color: #fff; }
+.studio-figure { display: block; width: 100%; height: 14rem; object-fit: contain; border: 1px solid var(--studio-card-border); border-radius: 0.5rem; background: var(--studio-card-surface); }

@@ -1,0 +1,31 @@
+{
+  "name": "slide-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.27.0",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "new": "node scripts/studio.mjs new",
+    "dev": "node scripts/studio.mjs dev",
+    "build": "node scripts/studio.mjs build",
+    "export": "node scripts/studio.mjs export",
+    "browser:install": "playwright install chromium",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "@slidev/cli": "52.16.0",
+    "@slidev/theme-default": "0.25.0",
+    "markdown-it": "14.3.0",
+    "playwright-chromium": "1.59.1",
+    "slidev-addon-studio": "workspace:*",
+    "vue": "3.5.39"
+  },
+  "pnpm": {
+    "overrides": {
+      "markdown-it": "14.3.0"
+    }
+  }
+}

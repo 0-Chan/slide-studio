@@ -1,0 +1,10 @@
+node_modules/
+dist/
+exports/
+.slidev/
+.vite/
+.vercel/
+.DS_Store
+.env
+.env.*
+*.log
