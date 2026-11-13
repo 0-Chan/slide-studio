@@ -9,4 +9,4 @@
 - 공통 스타일·경로 보정의 기반: https://github.com/0-Chan/git-github-101 — 같은 소유자의 원본 저장소에서 추출했습니다.
 - example.svg는 이 저장소를 위해 작성한 범용 예제입니다.
 
-포함된 Slidev 스킬에 적용되는 MIT 라이선스 원문은 .agents/skills/slidev/LICENSE에 보관합니다. 각 npm 의존성의 라이선스 원문은 설치된 해당 패키지에서 확인할 수 있습니다.
+포함된 Slidev 스킬에 적용되는 MIT 라이선스 원문은 https://github.com/slidevjs/slidev/blob/main/LICENSE 에 있습니다. 각 npm 의존성의 라이선스 원문은 설치된 해당 패키지에서 확인할 수 있습니다.
