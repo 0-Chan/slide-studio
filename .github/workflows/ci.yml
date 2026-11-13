@@ -25,6 +25,11 @@ jobs:
           node-version: 22
           cache: pnpm
 
+      # playwright-chromium is an allowed build dependency, and its postinstall
+      # downloads Chromium. Playwright 1.59.1 has no ubuntu-26.04 build, and CI
+      # does not export PDF or PPTX, so skip that download.
       - run: pnpm install --frozen-lockfile
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
       - run: pnpm test
       - run: pnpm build
