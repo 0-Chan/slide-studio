@@ -43,6 +43,7 @@
 ## 검증
 
 - 도구를 바꿨으면 pnpm test와 pnpm build를 실행합니다.
+- 풀 리퀘스트와 main 푸시에서는 CI가 pnpm test와 pnpm build를 실행합니다.
 - 발표를 바꿨으면 해당 발표를 빌드하고 16:9에서 가독성과 클릭 진행을 확인합니다.
 - 테마를 바꿨으면 dark/light, 카드·목차·코드·Mermaid를 함께 확인합니다.
 - API 키, 비공개 URL, 개인정보를 넣지 않습니다.

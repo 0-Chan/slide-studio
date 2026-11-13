@@ -131,6 +131,8 @@ pnpm build
 
 도구 변경 시 생성·중복 방지·발표 탐색·출력 경로 테스트를 실행합니다. 발표는 16:9에서 글자 크기·카드·이미지·Mermaid·클릭 진행을 확인하세요. 공통 디자인을 바꿀 때는 밝은 모드와 어두운 모드를 함께 확인합니다.
 
+풀 리퀘스트와 `main` 푸시에서는 GitHub Actions가 `pnpm test`와 `pnpm build`를 실행합니다.
+
 에이전트 작업 지침은 `AGENTS.md`, Slidev 문법은 `.agents/skills/slidev/SKILL.md`를 참고합니다. 예제와 생성 템플릿의 기본 구성을 바꾸면 두 곳을 함께 갱신하세요.
 
 ## 출처
