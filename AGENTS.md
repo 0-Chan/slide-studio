@@ -35,6 +35,9 @@
 - colorSchema는 dark 또는 light를 사용합니다.
 - themeConfig.primary와 themeConfig.background는 해당 발표의 강조색·CSS 배경입니다.
 - deckBackground는 해당 발표 public/ 기준 상대 이미지 경로입니다.
+- 본문색(--studio-foreground)과 보조 글자색(--studio-muted)은 colorSchema만 정합니다. 발표에서 이 변수를 덮어쓰거나 글자색을 지정하지 않고 colorSchema를 고릅니다.
+- themeConfig.background와 deckBackground 이미지는 colorSchema와 같은 밝기입니다. dark는 어두운 배경, light는 밝은 배경을 씁니다.
+- 강조색은 h1 제목색으로 유지합니다. 직접 지정한 themeConfig.primary는 배경의 가장 밝은 지점과 카드 면 대비 4.5:1 이상이어야 합니다.
 - 공통 변경은 shared에서 하고 발표 고유 변경은 해당 발표 안에 둡니다.
 - StudioCard와 StudioToc를 재사용하며 강의·회차 전용 이름을 공통 API에 넣지 않습니다.
 - Mermaid는 shared/setup/mermaid.ts를 사용합니다. 일반 전역 CSS로 shadow DOM을 수정하지 않습니다.
@@ -46,6 +49,7 @@
 - 풀 리퀘스트와 main 푸시에서는 CI가 pnpm test와 pnpm build를 실행합니다.
 - 발표를 바꿨으면 해당 발표를 빌드하고 16:9에서 가독성과 클릭 진행을 확인합니다.
 - 테마를 바꿨으면 dark/light, 카드·목차·코드·Mermaid를 함께 확인합니다.
+- 색, 배경, 강조색을 바꾼 발표는 WCAG AA 대비를 확인합니다. 본문 4.5:1 이상, 큰 제목 3:1 이상, 강조색은 배경 대비 4.5:1 이상이며 기본값은 이미 통과합니다.
 - API 키, 비공개 URL, 개인정보를 넣지 않습니다.
 - 새 의존성은 최소화하고, 외부 에셋을 추가할 때 출처와 라이선스를 확인합니다.
 - 최종 응답에는 변경 내용·검증 결과·남은 문제·바로 실행할 명령을 간결히 적습니다.
