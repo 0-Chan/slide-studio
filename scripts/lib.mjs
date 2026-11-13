@@ -39,7 +39,9 @@ export async function createDeck(root, slug) {
     if (error.code === 'EEXIST') throw new Error('이미 존재하는 발표입니다: ' + slug)
     throw error
   }
-  await cp(template, destination, { recursive: true, force: false, errorOnExist: true })
+  // The directory is empty and exclusively ours. errorOnExist would treat that
+  // reservation as a conflict on current Node.js.
+  await cp(template, destination, { recursive: true })
   await writeFile(resolve(destination, 'slides.md'), markdown.replaceAll('__TITLE__', slug))
   return destination
 }
