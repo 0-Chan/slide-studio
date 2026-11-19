@@ -17,7 +17,8 @@ highlighter: shiki
 transition: slide-left
 drawings:
   persist: false
-themeConfig: {}
+themeConfig:
+  primary: '#3E6A75'
 ---
 
 <p class="studio-subtitle cover-kicker">사람이 하기 힘든 일을 로봇이 대신할 때,</p>
