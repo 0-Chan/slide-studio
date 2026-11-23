@@ -234,7 +234,7 @@ class: shot
 class: lead
 ---
 
-<h1 class="long">첫 화면이 한동안 비어 있었습니다</h1>
+<h1>성능 문제 : 첫 화면 지연</h1>
 <ul class="points">
   <li><span class="n">01</span><span>화면 밖 이미지는 나중에 받음</span></li>
   <li><span class="n">02</span><span>초기 조회, 기다리는 동안 스켈레톤</span></li>
