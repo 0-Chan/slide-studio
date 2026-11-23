@@ -285,6 +285,15 @@ class: chapter
 </div>
 
 ---
+class: shot
+---
+
+<h1>사내 AI 챗봇 첫 화면</h1>
+<div class="evidence">
+  <img src="./public/chatbot-home.png" alt="사내 AI 챗봇 첫 화면" />
+</div>
+
+---
 class: lead
 ---
 
