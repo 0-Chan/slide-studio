@@ -379,6 +379,16 @@ class: num-slide
 </div>
 
 ---
+class: shot
+---
+
+<h1>0.9초 측정 근거</h1>
+<div class="evidence">
+  <img src="./public/lighthouse-2nd.png" alt="Lighthouse 성능 99, LCP 0.9초" />
+  <p class="fine">Lighthouse, 데스크탑 시뮬레이션, 로컬 측정</p>
+</div>
+
+---
 class: recap
 ---
 

@@ -447,42 +447,26 @@
 .evidence {
   flex: 1;
   min-height: 0;
-  display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
-  gap: 0.7rem;
-  align-items: center;
-}
-
-.evidence .points {
-  margin: 0;
-  gap: 0.7rem;
-}
-
-.evidence .points li {
-  font-size: 0.78rem;
-}
-
-.evidence-shot {
   display: flex;
   flex-direction: column;
-  min-width: 0;
-  min-height: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .evidence img {
   display: block;
-  width: 100%;
-  max-height: 16.8rem;
+  width: auto;
+  max-width: 100%;
+  max-height: 19.2rem;
   object-fit: contain;
-  object-position: center top;
   background: #fff;
   border: 1px solid var(--studio-card-border);
   border-radius: 0.3rem;
 }
 
 .evidence .fine {
-  margin: 0.35rem 0 0;
-  font-size: 0.68rem;
+  margin: 0.4rem 0 0;
+  font-size: 0.72rem;
   line-height: 1.35;
   font-weight: 400;
   color: var(--studio-muted);
