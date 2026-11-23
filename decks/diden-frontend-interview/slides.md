@@ -167,72 +167,55 @@ class: shot
 ---
 
 <h1>통합 성과</h1>
-<div class="frame">
-  <img src="./public/sns-home.png" alt="YouTube, Instagram 성과를 한 화면에서 조회하고 비교하는 B2B 대시보드" />
-  <p class="corner">YouTube, Instagram 성과를 한 화면에서 조회하고 비교하는 B2B 대시보드</p>
+<div class="shot-stack">
+  <div class="frame">
+    <div class="crop">
+      <img src="./public/sns-home.png" alt="YouTube, Instagram 성과를 한 화면에서 조회하고 비교하는 B2B 대시보드" />
+    </div>
+    <p class="corner">통합 화면</p>
+  </div>
+  <div class="frame">
+    <img src="./public/sns-list.png" alt="콘텐츠 리스트" />
+    <p class="corner">콘텐츠 리스트</p>
+  </div>
 </div>
 
 ---
-class: lead
+class: list
 ---
 
-<h1 class="long">2주마다 Meta, Google Ads에 하나씩 들어가 확인</h1>
+<h1>기존에 일하던 방식</h1>
+<ul class="points">
+  <li><span class="n">01</span><span>2주마다 Meta, Google Ads에 하나씩 들어가 확인</span></li>
+  <li><span class="n">02</span><span>확인할 때마다 보고서를 보냄</span></li>
+  <li><span class="n">03</span><span>이 보고를 담당 2명이 맡음</span></li>
+</ul>
 
 <!--
-광고주와 마케터에게 2주마다 보고서를 보내야 했다. 그때마다 Meta와 Google Ads에 각각 들어가 확인했다.
+광고주와 마케터에게 2주마다 보고서를 보내야 했다. 그때마다 Meta와 Google Ads에 각각 들어가 확인했다. 이 보고는 담당 2명이 맡았다.
 -->
 
 ---
 class: list
 ---
 
-<h1>문제 정의</h1>
+<h1>그대로 합치면 틀린다</h1>
 <ul class="points">
   <li><span class="n">01</span><span>플랫폼마다 지표 정의가 다름</span></li>
-  <li><span class="n">02</span><span>오가닉과 광고를 같은 기간으로 못 봄</span></li>
-  <li><span class="n">03</span><span>화면 영역마다 조회 조건이 따로 걸림</span></li>
+  <li><span class="n">02</span><span>누적, 일별, 비율, 도달</span></li>
+  <li><span class="n">03</span><span>더하면 합계가 안 맞고, 비율을 평균 내면 값이 틀림</span></li>
 </ul>
 
 ---
 class: list
 ---
 
-<h1>지표 유형</h1>
-<p class="one-line">누적 · 일별 · 비율 · 도달</p>
-
----
-class: list
----
-
-<h1>시행착오</h1>
+<h1 class="long">규칙은 나누고 조회는 하나</h1>
 <ul class="points">
-  <li><span class="n">01</span><span>원본 값을 그대로 더함 → 합계 불일치</span></li>
-  <li><span class="n">02</span><span>비율 지표를 평균 냄 → 값이 틀림</span></li>
+  <li><span class="n">01</span><span>유형별 집계 규칙, 다른 지표는 나란히</span></li>
+  <li><span class="n">02</span><span>오가닉과 광고는 같은 기간</span></li>
+  <li><span class="n">03</span><span>Recharts 공용 차트, 조회 조건은 전역 상태 하나</span></li>
 </ul>
-
----
-class: lead
----
-
-<h1 class="long">백엔드 연동 API(Meta, Google Ads)</h1>
-
----
-class: lead
----
-
-<h1 class="long">지표 유형별 집계 규칙, 다른 지표는 나란히</h1>
-
----
-class: lead
----
-
-<h1>오가닉과 광고를<br>같은 조회 기간에</h1>
-
----
-class: lead
----
-
-<h1 class="long">Recharts 공용 차트, 조회 조건은 전역 상태 하나</h1>
 
 ---
 class: shot
@@ -258,73 +241,28 @@ class: shot
 class: lead
 ---
 
-<h1 class="long">콘텐츠가 많은 목록, 첫 화면이 한동안 빈 채로</h1>
-
----
-class: lead
----
-
-<p class="kicker">원인</p>
-<h1 class="long">화면 밖 이미지까지 처음에 한꺼번에 요청</h1>
-
----
-class: list
----
-
-<h1>해결</h1>
+<h1 class="long">첫 화면이 한동안 비어 있었습니다</h1>
 <ul class="points">
-  <li><span class="n">01</span><span>첫 화면 이미지는 바로</span></li>
-  <li><span class="n">02</span><span>화면 밖만 지연 로딩</span></li>
+  <li><span class="n">01</span><span>화면 밖 이미지까지 처음에 한꺼번에 요청했습니다. 첫 화면만 바로 받고, 밖은 나중에 받게 했습니다.</span></li>
+  <li><span class="n">02</span><span>React Server Component에서 초기 데이터를 조회하고, 기다리는 동안 스켈레톤으로 화면 구조와 로딩 상태를 보여 줬습니다.</span></li>
+  <li><span class="n">03</span><span>본문 폰트는 OTF 원본이었습니다. 화면에 쓰는 글자만 WOFF2로 먼저 받고, HTML·JS·CSS는 gzip으로 1.17MB에서 0.59MB가 됐습니다.</span></li>
 </ul>
-
----
-class: lead
----
-
-<h1 class="long">React Server Component 초기 조회와 스켈레톤 UI</h1>
 
 <!--
 React Server Component에서 초기 데이터를 조회하고, 기다리는 동안 스켈레톤 UI로 화면 구조와 로딩 상태를 보여 준다.
 -->
 
 ---
-class: lead
----
-
-<p class="kicker">원인</p>
-<h1 class="long">첫 화면에서 본문 폰트 원본(OTF)을 그대로 받음</h1>
-
----
-class: list
----
-
-<h1>해결</h1>
-<ul class="points">
-  <li><span class="n">01</span><span>폰트 경량화: WOFF2, 화면에 쓰는 글자만 먼저</span></li>
-  <li><span class="n">02</span><span>HTML·JS·CSS 응답 gzip, 전송량 1.17MB → 0.59MB</span></li>
-</ul>
-
----
 class: num-slide
 ---
 
 <div class="pair">
-  <p class="kicker left">1차: 이미지</p>
-  <p class="kicker right">2차: 폰트와 응답 압축</p>
+  <p class="kicker left">1차, 이미지</p>
+  <p class="kicker right">2차, 폰트와 압축</p>
   <LcpFigure />
-  <p class="result-line">3.2초 → <span class="accent">0.9초</span></p>
-  <p class="fine left">크롬 개발자 도구 Lighthouse · 데스크톱 · 여러 번 측정한 평균</p>
-  <p class="fine right">개발 직후 기준, 두 가지 적용 후. Lighthouse CLI · 데스크톱 시뮬레이션 · 조건별 7회 측정 중앙값 · 로컬 브랜치, 운영 미반영</p>
-</div>
-
----
-class: shot
----
-
-<h1>0.9초 측정 근거</h1>
-<div class="evidence">
-  <img src="./public/lighthouse-2nd.png" alt="Lighthouse 성능 99, LCP 0.9초" />
-  <p class="fine">Lighthouse, 데스크탑 시뮬레이션, 로컬 측정</p>
+  <p class="result-line">3.2초에서 <span class="accent">0.9초</span></p>
+  <p class="fine left">개발자 도구 Lighthouse, 데스크톱, 여러 번 측정한 평균</p>
+  <p class="fine right">개발 직후 기준, 두 가지 적용 후. Lighthouse CLI, 데스크톱 시뮬레이션, 조건별 7회 중앙값. 로컬 브랜치, 운영 미반영</p>
 </div>
 
 ---
@@ -332,9 +270,9 @@ class: recap
 ---
 
 <div class="recap-lines">
-  <p>2주 보고서 폐지, 담당 2명에서 관리자 1명.</p>
-  <p>같은 조회수라도 플랫폼마다 센 방식이 달랐다.</p>
-  <p>합치기 전에 무엇을 셌는지 확인하고, 다르면 코드에서 갈라 둔다.</p>
+  <p>2주마다 보내던 보고서는 없앴습니다. 담당은 2명에서 관리자 1명이 됐습니다.</p>
+  <p>플랫폼마다 조회수를 세는 방식이 달랐습니다.</p>
+  <p>합치기 전에 무엇을 셌는지 확인하고, 다르면 코드에서 갈라 두었습니다.</p>
 </div>
 
 ---
