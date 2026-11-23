@@ -202,16 +202,9 @@ class: list
   <li><span class="n">03</span><span>더하면 합계가 안 맞고, 비율을 평균 내면 값이 틀림</span></li>
 </ul>
 
----
-class: list
----
-
-<h1 class="long">규칙은 나누고 조회는 하나</h1>
-<ul class="points">
-  <li><span class="n">01</span><span>유형별 집계 규칙, 다른 지표는 나란히</span></li>
-  <li><span class="n">02</span><span>오가닉과 광고는 같은 기간</span></li>
-  <li><span class="n">03</span><span>Recharts 공용 차트, 조회 조건은 전역 상태 하나</span></li>
-</ul>
+<!--
+규칙은 지표 유형별로 나눈다. 유형별 집계 규칙, 다른 지표는 나란히.
+-->
 
 ---
 class: shot
@@ -222,6 +215,10 @@ class: shot
   <img src="./public/sns-compare.png" alt="기간 비교 추이 차트" />
   <p class="corner">현재 기간 실선, 비교 기간 점선</p>
 </div>
+
+<!--
+조회는 하나다. 오가닉과 광고는 같은 기간. Recharts 공용 차트, 조회 조건은 전역 상태 하나.
+-->
 
 ---
 class: shot
