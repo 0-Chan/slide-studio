@@ -416,8 +416,8 @@
   flex: 1;
   min-height: 0;
   display: grid;
-  grid-template-columns: 0.82fr 1.18fr;
-  gap: 0.9rem;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 0.7rem;
   align-items: center;
 }
 
@@ -427,7 +427,7 @@
 }
 
 .evidence .points li {
-  font-size: 0.84rem;
+  font-size: 0.78rem;
 }
 
 .evidence-shot {
