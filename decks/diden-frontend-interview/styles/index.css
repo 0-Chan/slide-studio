@@ -420,6 +420,18 @@
   color: #c4c4cc;
 }
 
+.recap.slidev-layout p.badge {
+  margin-bottom: 0;
+}
+
+.recap.slidev-layout p.badge-note {
+  margin: 0.28rem 0 0;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #c4c4cc;
+}
+
 .close {
   display: flex;
   flex-direction: column;
