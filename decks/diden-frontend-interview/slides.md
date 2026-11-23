@@ -199,6 +199,8 @@ layout: center
 </div>
 
 ---
+class: perf-slide
+---
 
 <div class="kicker">성능 개선: 대시보드 첫 화면</div>
 <h1>1차: 이미지</h1>
@@ -207,12 +209,13 @@ layout: center
   <p><span class="label">원인:</span> 화면 밖 이미지까지 처음에 한꺼번에 요청</p>
   <p><span class="label">해결:</span> 첫 화면 이미지는 바로, 화면 밖만 지연 로딩 + React Server Component 초기 조회와 스켈레톤 UI</p>
   <div v-click>
-    <p><span class="label">결과:</span> LCP 3.2초 → <span class="accent">2.1초</span></p>
     <LcpFigure />
     <p class="fine">크롬 개발자 도구 Lighthouse · 데스크톱 · 여러 번 측정한 평균</p>
   </div>
 </div>
 
+---
+class: perf-slide
 ---
 
 <div class="kicker">성능 개선: 대시보드 첫 화면</div>
@@ -226,6 +229,5 @@ layout: center
     <li>해결 4: HTML·JS·CSS 응답 gzip 압축(첫 화면 전송량 1.17MB → 0.59MB)</li>
   </ul>
   <p class="big-result accent">0.9초</p>
-  <p class="big-note">결과: LCP 0.9초(네 가지 적용 후)</p>
   <p class="fine">Lighthouse CLI · 데스크톱 시뮬레이션 · 조건별 7회 측정 중앙값 · 로컬 브랜치, 운영 미반영</p>
 </div>

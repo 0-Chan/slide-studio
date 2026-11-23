@@ -16,8 +16,8 @@ onSlideEnter(() => {
       </clipPath>
     </defs>
     <g :key="play" clip-path="url(#lcp-num-clip)">
-      <text class="num from grow" x="140" y="64" text-anchor="middle">3.2초</text>
-      <text class="num to grow" x="140" y="64" text-anchor="middle">2.1초</text>
+      <text class="num from grow" x="4" y="68" text-anchor="start">3.2초</text>
+      <text class="num to grow" x="4" y="68" text-anchor="start">2.1초</text>
     </g>
   </svg>
 </template>
@@ -25,8 +25,8 @@ onSlideEnter(() => {
 <style scoped>
 .lcp-figure {
   display: block;
-  width: 100%;
-  height: 3.6rem;
+  width: 22rem;
+  height: 7.2rem;
   overflow: visible;
   font-family: "IBM Plex Sans KR", sans-serif;
 }
@@ -35,7 +35,7 @@ onSlideEnter(() => {
   font-size: 42px;
   font-weight: 700;
   transform-box: fill-box;
-  transform-origin: 50% 50%;
+  transform-origin: 0 50%;
 }
 
 .from {
