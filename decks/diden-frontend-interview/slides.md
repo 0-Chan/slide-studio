@@ -318,7 +318,7 @@ class: lead
 class: lead
 ---
 
-<h1><span class="accent">21개 → 1개</span></h1>
+<h1 class="long">다시 그리는 블록 <span class="accent">21개</span>에서 <span class="accent">1개</span></h1>
 <p class="one-line">커밋당 렌더 시간 평균 11.5ms에서 4.4ms</p>
 <p class="fine">React DevTools Profiler · 개발 빌드 · 같은 더미 응답 재현 측정</p>
 
@@ -345,9 +345,13 @@ class: recap
 ---
 
 <div class="recap-lines">
-  <p>느린 이유를 짐작으로 고치면 시간만 든다.</p>
-  <p>숫자로 원인을 확인하고 나서야 맞는 방향이 보였다.</p>
+  <p>대화를 열면 최근 메시지부터 불러오도록 바꿨습니다.</p>
+  <p>답변이 나오는 동안 다시 그리는 블록이 21개에서 1개로 줄었습니다.</p>
 </div>
+
+<!--
+느린 이유를 짐작으로 고치면 시간만 든다. 숫자로 원인을 확인하고 나서야 맞는 방향이 보였다.
+-->
 
 ---
 class: chapter
