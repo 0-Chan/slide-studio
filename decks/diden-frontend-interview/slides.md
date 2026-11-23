@@ -151,16 +151,6 @@ class: shot
 </div>
 
 ---
-class: recap
----
-
-<div class="recap-lines">
-  <p>작업자가 묻는 순서대로 화면을 짠다.</p>
-  <p>작업자는 통과했나를 먼저 묻는다.</p>
-  <p>세부 값은 그다음에 본다.</p>
-</div>
-
----
 class: chapter
 ---
 
