@@ -100,8 +100,8 @@ class: list
 
 <h1>이슈</h1>
 <ul class="points">
-  <li><span class="n">01</span><span>손 기록을 엑셀로 다시 옮김</span></li>
-  <li><span class="n">02</span><span>통과한 로봇을 추적하기 어려움</span></li>
+  <li><span class="n">01</span><span>손으로 적은 점검 결과를 엑셀에 다시 옮겨야 했습니다</span></li>
+  <li><span class="n">02</span><span>어떤 로봇이 통과했는지 한눈에 관리하기 어려웠습니다</span></li>
 </ul>
 
 <!--
