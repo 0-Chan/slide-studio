@@ -42,13 +42,14 @@ class: agenda
     <li>
       <span class="toc-no">01</span>
       <span>
-        <span class="toc-name">코가로보틱스</span>
-        <span class="toc-desc">양산 로봇 점검 대시보드</span>
+        <span class="toc-desc">코가로보틱스</span>
+        <span class="toc-name">양산 로봇 점검 대시보드</span>
       </span>
     </li>
     <li>
       <span class="toc-no">02</span>
       <span>
+        <span class="toc-desc">더에스엠씨</span>
         <span class="toc-name">SNS 마케팅 데이터 대시보드</span>
       </span>
     </li>
@@ -377,13 +378,14 @@ class: agenda
     <li>
       <span class="toc-no">01</span>
       <span>
-        <span class="toc-name">코가로보틱스</span>
-        <span class="toc-desc">양산 로봇 점검 대시보드</span>
+        <span class="toc-desc">코가로보틱스</span>
+        <span class="toc-name">양산 로봇 점검 대시보드</span>
       </span>
     </li>
     <li>
       <span class="toc-no">02</span>
       <span>
+        <span class="toc-desc">더에스엠씨</span>
         <span class="toc-name">SNS 마케팅 데이터 대시보드</span>
       </span>
     </li>

@@ -109,7 +109,7 @@
   display: grid;
   grid-template-columns: 2.1rem 1fr;
   gap: 0.55rem;
-  align-items: baseline;
+  align-items: last baseline;
 }
 
 .toc-no {
@@ -128,7 +128,7 @@
 
 .toc-desc {
   display: block;
-  margin-top: 0.12rem;
+  margin-bottom: 0.12rem;
   font-size: 0.78rem;
   line-height: 1.35;
   font-weight: 400;
