@@ -25,15 +25,15 @@ onSlideEnter(() => {
 <style scoped>
 .lcp-figure {
   display: block;
-  width: 22rem;
-  height: 7.2rem;
+  width: 28rem;
+  height: 9.2rem;
   overflow: visible;
   font-family: "IBM Plex Sans KR", sans-serif;
 }
 
 .num {
   font-size: 42px;
-  font-weight: 700;
+  font-weight: 400;
   transform-box: fill-box;
   transform-origin: 0 50%;
 }
