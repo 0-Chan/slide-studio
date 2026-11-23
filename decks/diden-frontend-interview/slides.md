@@ -181,13 +181,18 @@ class: shot
 </div>
 
 ---
-class: lead
+class: list
 ---
 
-<h1 class="long">2주마다 Meta, Google Ads에 하나씩 들어가 확인</h1>
+<h1>기존 문제</h1>
+<ul class="points">
+  <li><span class="n">01</span><span>2주마다 Meta, Google Ads에 하나씩 들어가 확인</span></li>
+  <li><span class="n">02</span><span>확인할 때마다 보고서를 보냄</span></li>
+  <li><span class="n">03</span><span>이 보고를 담당 2명이 맡음</span></li>
+</ul>
 
 <!--
-광고주와 마케터에게 2주마다 보고서를 보내야 했다. 그때마다 Meta와 Google Ads에 각각 들어가 확인했다.
+광고주와 마케터에게 2주마다 보고서를 보내야 했다. 그때마다 Meta와 Google Ads에 각각 들어가 확인했다. 이 보고는 담당 2명이 맡았다.
 -->
 
 ---
