@@ -212,10 +212,9 @@ class: list
 
 <h1 class="long">규칙은 나누고 조회는 하나</h1>
 <ul class="points">
-  <li><span class="n">01</span><span>Meta, Google Ads는 API로 연동</span></li>
-  <li><span class="n">02</span><span>유형별 집계 규칙, 다른 지표는 나란히</span></li>
-  <li><span class="n">03</span><span>오가닉과 광고는 같은 기간</span></li>
-  <li><span class="n">04</span><span>Recharts 공용 차트, 조회 조건은 전역 상태 하나</span></li>
+  <li><span class="n">01</span><span>유형별 집계 규칙, 다른 지표는 나란히</span></li>
+  <li><span class="n">02</span><span>오가닉과 광고는 같은 기간</span></li>
+  <li><span class="n">03</span><span>Recharts 공용 차트, 조회 조건은 전역 상태 하나</span></li>
 </ul>
 
 ---
