@@ -41,52 +41,30 @@ class: agenda
   <ol>
     <li>
       <span class="toc-no">01</span>
-      <span>
-        <span class="toc-desc">코가로보틱스</span>
-        <span class="toc-name">양산 로봇 점검 대시보드</span>
-      </span>
+      <span class="toc-name">양산 로봇 점검 대시보드</span>
     </li>
     <li>
       <span class="toc-no">02</span>
-      <span>
-        <span class="toc-desc">더에스엠씨</span>
-        <span class="toc-name">SNS 마케팅 데이터 대시보드</span>
-      </span>
+      <span class="toc-name">SNS 마케팅 데이터 대시보드</span>
     </li>
     <li>
       <span class="toc-no">03</span>
-      <span>
-        <span class="toc-desc">더에스엠씨</span>
-        <span class="toc-name">사내 AI 챗봇</span>
-      </span>
+      <span class="toc-name">사내 AI 챗봇</span>
     </li>
     <li>
       <span class="toc-no">04</span>
-      <span>
-        <span class="toc-desc">더에스엠씨</span>
-        <span class="toc-name">AWS 인프라와 배포</span>
-      </span>
+      <span class="toc-name">AWS 인프라와 배포</span>
     </li>
     <li>
       <span class="toc-no">05</span>
-      <span>
-        <span class="toc-desc">더에스엠씨</span>
-        <span class="toc-name">정산 이상 징후 탐지</span>
-      </span>
+      <span class="toc-name">정산 이상 징후 탐지</span>
     </li>
     <li>
       <span class="toc-no">06</span>
-      <span>
-        <span class="toc-desc">인아오리엔탈모터</span>
-        <span class="toc-name">제조 현장</span>
-      </span>
+      <span class="toc-name">제조 현장</span>
     </li>
   </ol>
 </div>
-
-<!--
-차례는 개요 1장부터 10장까지의 프로젝트다. 11장 마무리는 차례에 넣지 않는다.
--->
 
 ---
 class: chapter
@@ -610,45 +588,27 @@ class: agenda
   <ol>
     <li>
       <span class="toc-no">01</span>
-      <span>
-        <span class="toc-desc">코가로보틱스</span>
-        <span class="toc-name">양산 로봇 점검 대시보드</span>
-      </span>
+      <span class="toc-name">양산 로봇 점검 대시보드</span>
     </li>
     <li>
       <span class="toc-no">02</span>
-      <span>
-        <span class="toc-desc">더에스엠씨</span>
-        <span class="toc-name">SNS 마케팅 데이터 대시보드</span>
-      </span>
+      <span class="toc-name">SNS 마케팅 데이터 대시보드</span>
     </li>
     <li>
       <span class="toc-no">03</span>
-      <span>
-        <span class="toc-desc">더에스엠씨</span>
-        <span class="toc-name">사내 AI 챗봇</span>
-      </span>
+      <span class="toc-name">사내 AI 챗봇</span>
     </li>
     <li>
       <span class="toc-no">04</span>
-      <span>
-        <span class="toc-desc">더에스엠씨</span>
-        <span class="toc-name">AWS 인프라와 배포</span>
-      </span>
+      <span class="toc-name">AWS 인프라와 배포</span>
     </li>
     <li>
       <span class="toc-no">05</span>
-      <span>
-        <span class="toc-desc">더에스엠씨</span>
-        <span class="toc-name">정산 이상 징후 탐지</span>
-      </span>
+      <span class="toc-name">정산 이상 징후 탐지</span>
     </li>
     <li>
       <span class="toc-no">06</span>
-      <span>
-        <span class="toc-desc">인아오리엔탈모터</span>
-        <span class="toc-name">제조 현장</span>
-      </span>
+      <span class="toc-name">제조 현장</span>
     </li>
   </ol>
 </div>
