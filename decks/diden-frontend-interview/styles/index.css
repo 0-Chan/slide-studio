@@ -355,19 +355,50 @@
 .pair {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  align-items: start;
+  column-gap: 1.5rem;
+  row-gap: 0.45rem;
+  align-items: baseline;
+}
+
+.pair .kicker {
+  margin: 0;
+}
+
+.pair .kicker.left,
+.pair .lcp-figure,
+.pair .fine.left {
+  grid-column: 1;
+}
+
+.pair .kicker.right,
+.pair .big-result,
+.pair .fine.right {
+  grid-column: 2;
+}
+
+.pair .kicker {
+  grid-row: 1;
+}
+
+.pair .lcp-figure,
+.pair .big-result {
+  grid-row: 2;
+}
+
+.pair .fine {
+  grid-row: 3;
 }
 
 .num-slide .pair .lcp-figure {
-  width: 19rem;
-  height: 4.9rem;
-  margin-top: 0.2rem;
+  width: auto;
+  height: auto;
+  margin: 0;
+  font-size: 3.05rem;
 }
 
 .num-slide .fine {
-  margin: 0.35rem 0 0;
-  max-width: 16rem;
+  margin: 0;
+  max-width: 16.5rem;
   font-size: 0.62rem;
   line-height: 1.4;
   font-weight: 400;
@@ -375,7 +406,7 @@
 }
 
 .num-slide .big-result {
-  margin: 0.45rem 0 0;
+  margin: 0;
   font-size: 3.05rem;
   line-height: 1;
   font-weight: 400;

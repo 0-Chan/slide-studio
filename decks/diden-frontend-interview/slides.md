@@ -353,16 +353,12 @@ class: num-slide
 ---
 
 <div class="pair">
-  <div>
-    <p class="kicker">1차: 이미지</p>
-    <LcpFigure />
-    <p class="fine">크롬 개발자 도구 Lighthouse · 데스크톱 · 여러 번 측정한 평균</p>
-  </div>
-  <div>
-    <p class="kicker">2차: 폰트와 응답 압축</p>
-    <p class="big-result accent">0.9초</p>
-    <p class="fine">Lighthouse CLI · 데스크톱 시뮬레이션 · 조건별 7회 측정 중앙값 · 로컬 브랜치, 운영 미반영</p>
-  </div>
+  <p class="kicker left">1차: 이미지</p>
+  <p class="kicker right">2차: 폰트와 응답 압축</p>
+  <LcpFigure />
+  <p class="big-result accent">0.9초</p>
+  <p class="fine left">크롬 개발자 도구 Lighthouse · 데스크톱 · 여러 번 측정한 평균</p>
+  <p class="fine right">Lighthouse CLI · 데스크톱 시뮬레이션 · 조건별 7회 측정 중앙값 · 로컬 브랜치, 운영 미반영</p>
 </div>
 
 ---
