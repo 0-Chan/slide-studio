@@ -147,7 +147,7 @@ class: list
 <ul class="points">
   <li><span class="n">01</span><span>점검 대상: LiDAR · RGB-D 카메라 · LED·스피커 · 구동부</span></li>
   <li><span class="n">02</span><span>판정은 순간값에서 구간 평균으로</span></li>
-  <li><span class="n">03</span><span>통과 여부 먼저, 실시간 ROS 토픽, 로봇별 보고서</span></li>
+  <li><span class="n">03</span><span>통과 여부 먼저, 로봇별 보고서</span></li>
 </ul>
 
 <!--
@@ -265,20 +265,6 @@ class: shot
 -->
 
 ---
-class: shot
----
-
-<h1 class="long">오가닉과 광고를 같은 조회 기간에</h1>
-<div class="frame">
-  <img src="./public/sns-list.png" alt="콘텐츠 리스트" />
-  <p class="corner">콘텐츠 리스트</p>
-</div>
-
-<!--
-콘텐츠 리스트에서 오가닉과 광고를 같은 조회 기간에 봅니다.
--->
-
----
 class: lead
 ---
 
@@ -301,7 +287,7 @@ class: num-slide
   <p class="kicker left">1차, 이미지</p>
   <p class="kicker right">2차, 폰트와 압축</p>
   <LcpFigure />
-  <p class="result-line">3.2초에서 <span class="accent">0.9초</span></p>
+  <p class="result-line">2.1초에서 <span class="accent">0.9초</span></p>
   <p class="fine left">개발자 도구 Lighthouse, 데스크톱, 여러 번 측정한 평균</p>
   <p class="fine right">개발 직후 기준, 두 가지 적용 후. Lighthouse CLI, 데스크톱 시뮬레이션, 조건별 7회 중앙값. 로컬 브랜치, 운영 미반영</p>
 </div>
