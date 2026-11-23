@@ -184,7 +184,7 @@ class: shot
 class: list
 ---
 
-<h1>기존 문제</h1>
+<h1>기존에 일하던 방식</h1>
 <ul class="points">
   <li><span class="n">01</span><span>2주마다 Meta, Google Ads에 하나씩 들어가 확인</span></li>
   <li><span class="n">02</span><span>확인할 때마다 보고서를 보냄</span></li>
