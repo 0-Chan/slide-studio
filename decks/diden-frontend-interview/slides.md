@@ -74,8 +74,8 @@ class: shot
 ---
 
 <h1>점검 대시보드</h1>
-<div class="frame">
-  <FilePlaceholder name="koga-dashboard.png" />
+<div class="frame shot-fit">
+  <img src="./public/koga-dashboard.png" alt="양산 로봇 점검 콘솔 대시보드" />
   <p class="corner">양산 로봇 점검 콘솔</p>
 </div>
 
@@ -155,8 +155,8 @@ class: shot
 ---
 
 <h1>센서 점검</h1>
-<div class="frame">
-  <FilePlaceholder name="koga-sensor.png" />
+<div class="frame shot-fit">
+  <img src="./public/koga-sensor.png" alt="LiDAR와 RGB-D 센서 점검" />
   <p class="corner">센서 점검 화면</p>
 </div>
 
@@ -165,8 +165,8 @@ class: shot
 ---
 
 <h1>구동부 점검</h1>
-<div class="frame">
-  <FilePlaceholder name="koga-drive.png" />
+<div class="frame shot-fit">
+  <img src="./public/koga-drive.png" alt="구동부 점검" />
   <p class="corner">구동부 점검 화면</p>
 </div>
 

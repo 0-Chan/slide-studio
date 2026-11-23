@@ -296,6 +296,26 @@
   text-align: right;
 }
 
+.shot-fit {
+  display: flex;
+  flex-direction: column;
+}
+
+.shot-fit img {
+  width: 100%;
+  height: auto;
+  max-height: calc(100% - 1.05rem);
+  object-fit: contain;
+  object-position: center top;
+}
+
+.shot-fit .corner {
+  position: static;
+  align-self: flex-end;
+  margin-top: 0.2rem;
+  background: transparent;
+}
+
 .recap.slidev-layout {
   height: 100%;
   display: flex;
