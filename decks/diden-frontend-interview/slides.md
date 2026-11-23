@@ -147,7 +147,7 @@ class: list
 <ul class="points">
   <li><span class="n">01</span><span>점검 대상: LiDAR · RGB-D 카메라 · LED·스피커 · 구동부</span></li>
   <li><span class="n">02</span><span>판정은 순간값에서 구간 평균으로</span></li>
-  <li><span class="n">03</span><span>통과 여부 먼저, 실시간 ROS 토픽, 로봇별 보고서</span></li>
+  <li><span class="n">03</span><span>통과 여부 먼저, 로봇별 보고서</span></li>
 </ul>
 
 <!--
