@@ -251,6 +251,14 @@
   font-weight: 400;
 }
 
+.slidev-layout .example {
+  margin: 0.9rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--studio-muted);
+}
+
 .shot.slidev-layout {
   display: flex;
   flex-direction: column;

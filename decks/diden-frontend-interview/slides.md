@@ -92,7 +92,7 @@ class: shot
 class: lead
 ---
 
-<h1 class="long">로봇은 늘었는데 점검 기록은<br>여전히 손으로 적고 있었습니다</h1>
+<h1 class="long">로봇은 늘었는데 점검 기록은<br>여전히 손으로 적고 있는 문제</h1>
 
 ---
 class: list
@@ -112,13 +112,8 @@ class: list
 class: lead
 ---
 
-<h1>기록은 흩어지고<br><span class="accent">판정 기준</span>도 없음</h1>
-
----
-class: lead
----
-
-<h1 class="long">LiDAR 값이 얼마나 벗어나면 재캘리브레이션할지 기준 없음</h1>
+<h1 class="long">검사 통과를 판단할 <span class="accent">기준</span>도<br>대시보드에 내장해 손쉽게 관리</h1>
+<p class="example">예: LiDAR 값이 얼마나 벗어나면 재캘리브레이션할지</p>
 
 ---
 class: list
