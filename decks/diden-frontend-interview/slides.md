@@ -365,16 +365,10 @@ class: num-slide
 class: shot
 ---
 
-<h1>측정 근거</h1>
+<h1>0.9초 측정</h1>
 <div class="evidence">
-  <div>
-    <FilePlaceholder name="자리: 1차 Lighthouse 캡처" />
-    <p class="fine">크롬 개발자 도구 · 데스크톱 · LCP 3.2초와 2.1초</p>
-  </div>
-  <div>
-    <img src="./public/lighthouse-2nd.png" alt="Lighthouse 성능 99, LCP 0.9초" />
-    <p class="fine">Lighthouse, 데스크탑 시뮬레이션, 로컬 측정</p>
-  </div>
+  <img src="./public/lighthouse-2nd.png" alt="Lighthouse 성능 99, LCP 0.9초" />
+  <p class="fine">Lighthouse, 데스크탑 시뮬레이션, 로컬 측정</p>
 </div>
 
 ---
