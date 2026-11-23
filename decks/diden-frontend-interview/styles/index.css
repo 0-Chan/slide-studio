@@ -251,6 +251,10 @@
   font-weight: 400;
 }
 
+.lead.slidev-layout h1 + p.one-line {
+  margin: 0.55rem 0 0;
+}
+
 .slidev-layout h1 + p.example {
   margin: 0.9rem 0 0;
   font-size: 0.95rem;
