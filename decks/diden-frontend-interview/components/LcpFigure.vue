@@ -1,26 +1,23 @@
 <script setup lang="ts">
-const maxSeconds = 3.5
-const beforeSeconds = 3.2
-const afterSeconds = 2.1
-const axisX = 8
-const axisWidth = 624
-const beforeWidth = axisWidth * beforeSeconds / maxSeconds
-const afterWidth = axisWidth * afterSeconds / maxSeconds
+import { onSlideEnter } from '@slidev/client'
+import { ref } from 'vue'
+
+const play = ref(0)
+onSlideEnter(() => {
+  play.value += 1
+})
 </script>
 
 <template>
-  <svg class="lcp-figure" viewBox="0 0 640 136" role="group">
-    <text class="fig-tick" :x="axisX" y="16">0</text>
-    <text class="fig-tick" :x="axisX + axisWidth" y="16" text-anchor="end">3.5초</text>
-    <line class="fig-axis" :x1="axisX" y1="26" :x2="axisX + axisWidth" y2="26" />
-    <g v-click>
-      <text class="fig-label" :x="axisX" y="52">개선 전 3.2초</text>
-      <rect class="bar bar-before grow" :x="axisX" y="60" :width="beforeWidth" height="20" rx="4" />
-    </g>
-    <g v-click>
-      <text class="fig-label" :x="axisX" y="100">개선 후 2.1초</text>
-      <text class="fig-delta" :x="axisX + axisWidth" y="100" text-anchor="end">1.1초 단축 (약 34%)</text>
-      <rect class="bar bar-after grow" :x="axisX" y="108" :width="afterWidth" height="20" rx="4" />
+  <svg class="lcp-figure" viewBox="0 0 280 92" role="img" aria-label="LCP 3.2초에서 2.1초">
+    <defs>
+      <clipPath id="lcp-num-clip">
+        <rect x="0" y="0" width="280" height="92" />
+      </clipPath>
+    </defs>
+    <g :key="play" clip-path="url(#lcp-num-clip)">
+      <text class="num from grow" x="140" y="64" text-anchor="middle">3.2초</text>
+      <text class="num to grow" x="140" y="64" text-anchor="middle">2.1초</text>
     </g>
   </svg>
 </template>
@@ -29,51 +26,46 @@ const afterWidth = axisWidth * afterSeconds / maxSeconds
 .lcp-figure {
   display: block;
   width: 100%;
-  height: auto;
-  margin-top: 0.35rem;
+  height: 3.6rem;
   overflow: visible;
   font-family: "IBM Plex Sans KR", sans-serif;
 }
 
-.fig-tick {
-  fill: var(--studio-muted);
-  font-size: 13px;
-}
-
-.fig-label {
-  fill: var(--studio-foreground);
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.fig-delta {
-  fill: var(--studio-accent);
-  font-size: 15px;
+.num {
+  font-size: 42px;
   font-weight: 700;
-}
-
-.fig-axis {
-  stroke: var(--studio-muted);
-  stroke-width: 1.5;
-}
-
-.bar-before {
-  fill: var(--studio-muted);
-}
-
-.bar-after {
-  fill: var(--studio-accent);
-}
-
-.grow {
   transform-box: fill-box;
-  transform-origin: 0 50%;
-  animation: lcp-grow 0.7s ease both;
+  transform-origin: 50% 50%;
 }
 
-@keyframes lcp-grow {
+.from {
+  fill: var(--studio-muted);
+  opacity: 0;
+}
+
+.to {
+  fill: var(--studio-accent);
+  opacity: 1;
+}
+
+.grow.from {
+  animation: lcp-out 0.85s ease both;
+}
+
+.grow.to {
+  animation: lcp-in 0.85s ease both;
+}
+
+@keyframes lcp-out {
   from {
-    transform: scaleX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes lcp-in {
+  from {
+    opacity: 0;
+    transform: scale(0.86);
   }
 }
 
