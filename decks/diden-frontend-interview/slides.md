@@ -199,53 +199,24 @@ class: list
 class: list
 ---
 
-<h1>문제 정의</h1>
+<h1>그대로 합치면 틀린다</h1>
 <ul class="points">
   <li><span class="n">01</span><span>플랫폼마다 지표 정의가 다름</span></li>
-  <li><span class="n">02</span><span>오가닉과 광고를 같은 기간으로 못 봄</span></li>
-  <li><span class="n">03</span><span>화면 영역마다 조회 조건이 따로 걸림</span></li>
+  <li><span class="n">02</span><span>누적, 일별, 비율, 도달</span></li>
+  <li><span class="n">03</span><span>더하면 합계가 안 맞고, 비율을 평균 내면 값이 틀림</span></li>
 </ul>
 
 ---
 class: list
 ---
 
-<h1>지표 유형</h1>
-<p class="one-line">누적 · 일별 · 비율 · 도달</p>
-
----
-class: list
----
-
-<h1>시행착오</h1>
+<h1 class="long">규칙은 나누고 조회는 하나</h1>
 <ul class="points">
-  <li><span class="n">01</span><span>원본 값을 그대로 더함 → 합계 불일치</span></li>
-  <li><span class="n">02</span><span>비율 지표를 평균 냄 → 값이 틀림</span></li>
+  <li><span class="n">01</span><span>Meta, Google Ads는 API로 연동</span></li>
+  <li><span class="n">02</span><span>유형별 집계 규칙, 다른 지표는 나란히</span></li>
+  <li><span class="n">03</span><span>오가닉과 광고는 같은 기간</span></li>
+  <li><span class="n">04</span><span>Recharts 공용 차트, 조회 조건은 전역 상태 하나</span></li>
 </ul>
-
----
-class: lead
----
-
-<h1 class="long">백엔드 연동 API(Meta, Google Ads)</h1>
-
----
-class: lead
----
-
-<h1 class="long">지표 유형별 집계 규칙, 다른 지표는 나란히</h1>
-
----
-class: lead
----
-
-<h1>오가닉과 광고를<br>같은 조회 기간에</h1>
-
----
-class: lead
----
-
-<h1 class="long">Recharts 공용 차트, 조회 조건은 전역 상태 하나</h1>
 
 ---
 class: shot
