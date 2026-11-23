@@ -32,6 +32,14 @@ themeConfig:
   </div>
 </div>
 
+<!--
+안녕하세요, 저는 복잡한 데이터를 사용자가 쉽게 판단할 수 있도록 돕는 화면을 만들어 왔습니다.
+로봇 현장에서 3년, 프론트엔드 개발자로 3년 일하면서 기술은 사람이 더 나은 일을 하도록 돕는 것이라고 믿어 왔는데요.
+그 믿음으로 현장의 목소리가 담긴 로봇 소프트웨어를 만들고 싶은 프론트엔드 개발자 김영찬입니다.
+
+지금부터 제 주요 프로젝트와 직무 역량을 소개하는 발표를 시작하겠습니다.
+-->
+
 ---
 class: agenda
 ---
@@ -62,6 +70,10 @@ class: agenda
   </ol>
 </div>
 
+<!--
+주요 프로젝트는 이 다섯 가지 순서입니다. 양산 로봇 점검 대시보드, SNS 마케팅 데이터 대시보드, 사내 AI 챗봇, AWS 인프라와 배포, 그리고 제조 현장입니다.
+-->
+
 ---
 class: chapter
 ---
@@ -74,6 +86,10 @@ class: chapter
   </div>
 </div>
 
+<!--
+먼저 양산 로봇 점검 대시보드입니다.
+-->
+
 ---
 class: shot
 ---
@@ -84,11 +100,19 @@ class: shot
   <p class="corner">양산 로봇 점검 콘솔</p>
 </div>
 
+<!--
+이 화면이 양산 로봇 점검 콘솔입니다. 점검 결과를 한곳에서 보도록 만든 대시보드입니다.
+-->
+
 ---
 class: lead
 ---
 
 <h1 class="long">로봇은 늘었는데 점검 기록은<br>여전히 손으로 적고 있는 문제</h1>
+
+<!--
+로봇은 늘었는데, 점검 기록은 여전히 손으로 적고 있었습니다.
+-->
 
 ---
 class: list
@@ -110,6 +134,10 @@ class: lead
 
 <h1 class="long">검사 통과를 판단할 <span class="accent">기준</span>도<br>대시보드에 내장해 손쉽게 관리</h1>
 <p class="example">예: LiDAR 값이 얼마나 벗어나면 재캘리브레이션할지</p>
+
+<!--
+검사 통과를 판단할 기준도 대시보드에 넣어서 관리하게 했습니다. 예를 들면, LiDAR 값이 얼마나 벗어나면 재캘리브레이션할지입니다.
+-->
 
 ---
 class: list
@@ -136,6 +164,10 @@ class: shot
   <p class="corner">센서 점검 화면</p>
 </div>
 
+<!--
+센서 점검 화면입니다. LiDAR와 RGB-D를 확인합니다.
+-->
+
 ---
 class: shot
 ---
@@ -145,6 +177,10 @@ class: shot
   <img src="./public/koga-drive.png" alt="구동부 점검" />
   <p class="corner">구동부 점검 화면</p>
 </div>
+
+<!--
+구동부 점검 화면입니다.
+-->
 
 ---
 class: chapter
@@ -157,6 +193,10 @@ class: chapter
     <h1 class="long">SNS 마케팅<br>데이터 대시보드</h1>
   </div>
 </div>
+
+<!--
+다음은 SNS 마케팅 데이터 대시보드입니다.
+-->
 
 ---
 class: shot
@@ -175,6 +215,10 @@ class: shot
     <p class="corner">콘텐츠 리스트</p>
   </div>
 </div>
+
+<!--
+YouTube와 Instagram 성과를 한 화면에서 보고, 아래는 콘텐츠 리스트입니다.
+-->
 
 ---
 class: list
@@ -230,6 +274,10 @@ class: shot
   <p class="corner">콘텐츠 리스트</p>
 </div>
 
+<!--
+콘텐츠 리스트에서 오가닉과 광고를 같은 조회 기간에 봅니다.
+-->
+
 ---
 class: lead
 ---
@@ -258,6 +306,10 @@ class: num-slide
   <p class="fine right">개발 직후 기준, 두 가지 적용 후. Lighthouse CLI, 데스크톱 시뮬레이션, 조건별 7회 중앙값. 로컬 브랜치, 운영 미반영</p>
 </div>
 
+<!--
+1차는 이미지입니다. 왼쪽 숫자는 3.2초에서 2.1초로 바뀝니다. 2차는 폰트와 압축이고, 두 가지를 적용한 뒤 3.2초에서 0.9초가 됐습니다. 0.9초는 개발 직후 기준입니다. 개발자 도구 Lighthouse에서 데스크톱으로 여러 번 측정한 평균이 있고, Lighthouse CLI 데스크톱 시뮬레이션으로 조건별 7회 중앙값도 있습니다. 로컬에서 측정했고, 운영에는 반영하지 않았습니다.
+-->
+
 ---
 class: recap
 ---
@@ -283,6 +335,10 @@ class: chapter
   </div>
 </div>
 
+<!--
+다음은 사내 AI 챗봇입니다.
+-->
+
 ---
 class: shot
 ---
@@ -292,11 +348,19 @@ class: shot
   <img src="./public/chatbot-home.png" alt="사내 AI 챗봇 첫 화면" />
 </div>
 
+<!--
+사내 AI 챗봇 첫 화면입니다.
+-->
+
 ---
 class: lead
 ---
 
 <h1 class="long">사내 검색과 외부 AI 모델을 한곳에서 쓰는 채팅</h1>
+
+<!--
+사내 검색과 외부 AI 모델을 한곳에서 쓰는 채팅입니다.
+-->
 
 ---
 class: list
@@ -308,11 +372,19 @@ class: list
   <li><span class="n">02</span><span>스트리밍 중 바뀌지 않은 마크다운 블록까지 반복 렌더링</span></li>
 </ul>
 
+<!--
+느린 이유는 두 가지였습니다. 대화를 열면 모든 메시지를 한꺼번에 불러와 그렸고, 스트리밍 중에는 바뀌지 않은 마크다운 블록까지 반복해서 렌더링했습니다.
+-->
+
 ---
 class: lead
 ---
 
 <h1 class="long">최근 메시지 먼저, 스크롤하면 이전 메시지 추가</h1>
+
+<!--
+그래서 최근 메시지를 먼저 불러오고, 스크롤하면 이전 메시지를 추가하도록 바꿨습니다.
+-->
 
 ---
 class: lead
@@ -321,6 +393,10 @@ class: lead
 <h1 class="long">다시 그리는 블록 <span class="accent">21개</span>에서 <span class="accent">1개</span></h1>
 <p class="one-line">커밋당 렌더 시간 평균 11.5ms에서 4.4ms</p>
 <p class="fine">React DevTools Profiler · 개발 빌드 · 같은 더미 응답 재현 측정</p>
+
+<!--
+다시 그리는 블록은 21개에서 1개가 됐습니다. 커밋당 렌더 시간 평균은 11.5ms에서 4.4ms입니다. React DevTools Profiler로, 개발 빌드에서, 같은 더미 응답을 재현해 측정했습니다.
+-->
 
 ---
 class: shot
@@ -331,6 +407,10 @@ class: shot
   <img src="./public/profiler-before-flame.png" alt="적용 전 Profiler. 마크다운 블록이 모두 다시 그려짐" />
 </div>
 
+<!--
+적용 전 Profiler입니다. 마크다운 블록이 모두 다시 그려집니다.
+-->
+
 ---
 class: shot
 ---
@@ -339,6 +419,10 @@ class: shot
 <div class="frame">
   <img src="./public/profiler-after-flame.png" alt="적용 후 Profiler. 끝난 블록은 회색이고 하나만 색이 있음" />
 </div>
+
+<!--
+적용 후입니다. 끝난 블록은 회색이고, 하나만 색이 있습니다.
+-->
 
 ---
 class: recap
@@ -365,12 +449,20 @@ class: chapter
   </div>
 </div>
 
+<!--
+다음은 AWS 인프라와 배포입니다.
+-->
+
 ---
 class: lead
 ---
 
 <p class="kicker">SNS 마케팅 데이터 대시보드 배포 인프라</p>
 <h1 class="long">배포 자동화, 실패해도 이전 버전 유지</h1>
+
+<!--
+SNS 마케팅 데이터 대시보드의 배포 인프라입니다. 배포를 자동화해서, 실패해도 이전 버전을 유지하게 했습니다.
+-->
 
 ---
 class: list
@@ -383,6 +475,10 @@ class: list
   <li><span class="n">03</span><span>Terraform. 백엔드 개발자의 기존 구성을 참고하고 코드 리뷰 받음</span></li>
 </ul>
 
+<!--
+처음에는 AWS 콘솔에서 수작업으로 해서 관리가 어긋났습니다. 그래서 Terraform으로 바꿨고, 백엔드 개발자의 기존 구성을 참고한 뒤 코드 리뷰를 받았습니다.
+-->
+
 ---
 class: shot
 ---
@@ -391,6 +487,10 @@ class: shot
 <div class="frame">
   <img src="./public/slide8_aws_deploy.png" alt="GitHub Actions에서 ECR, Prisma 마이그레이션, CodeDeploy, ECS Fargate로 이어지는 배포" />
 </div>
+
+<!--
+배포는 GitHub Actions에서 ECR, Prisma 마이그레이션, CodeDeploy, ECS Fargate로 이어집니다.
+-->
 
 ---
 class: shot
@@ -401,6 +501,10 @@ class: shot
   <img src="./public/slide8_aws_rollback.png" alt="마이그레이션 실패 시 배포 중단과 배포 실패 시 자동 롤백" />
 </div>
 
+<!--
+마이그레이션이 실패하면 배포를 멈추고, 배포가 실패하면 자동으로 롤백합니다.
+-->
+
 ---
 class: recap
 ---
@@ -409,6 +513,10 @@ class: recap
   <p>되돌릴 길이 있어야 자주 배포할 수 있다.</p>
 </div>
 <p class="badge">AWS SAA-C03 취득, 2026.10</p>
+
+<!--
+되돌릴 길이 있어야 자주 배포할 수 있습니다. AWS SAA-C03은 2026년 10월에 취득했습니다.
+-->
 
 ---
 class: chapter
@@ -422,11 +530,19 @@ class: chapter
   </div>
 </div>
 
+<!--
+마지막으로 제조 현장입니다.
+-->
+
 ---
 class: lead
 ---
 
 <h1 class="long">제조 현장에서 협동로봇을 직접 설치하고 검증</h1>
+
+<!--
+제조 현장에서 협동로봇을 직접 설치하고 검증했습니다.
+-->
 
 ---
 class: lead
@@ -436,3 +552,7 @@ class: lead
   <h1>디든로보틱스의 로봇을 다루는 분들에게도 정말 도움이 되는 플랫폼을 제공하고 싶습니다</h1>
   <p class="close-ask">질문 받겠습니다</p>
 </div>
+
+<!--
+디든로보틱스의 로봇을 다루는 분들에게도 정말 도움이 되는 플랫폼을 제공하고 싶습니다. 질문 받겠습니다.
+-->
