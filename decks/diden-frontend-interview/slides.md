@@ -66,7 +66,10 @@ class: chapter
 
 <div class="chapter-wrap">
   <div class="chapter-no">01</div>
-  <h1>코가로보틱스</h1>
+  <div class="chapter-title">
+    <p class="chapter-label">코가로보틱스</p>
+    <h1>양산 로봇 점검 대시보드</h1>
+  </div>
 </div>
 
 ---
@@ -186,7 +189,10 @@ class: chapter
 
 <div class="chapter-wrap">
   <div class="chapter-no">02</div>
-  <h1 class="long">SNS 마케팅<br>데이터 대시보드</h1>
+  <div class="chapter-title">
+    <p class="chapter-label">더에스엠씨</p>
+    <h1 class="long">SNS 마케팅<br>데이터 대시보드</h1>
+  </div>
 </div>
 
 ---

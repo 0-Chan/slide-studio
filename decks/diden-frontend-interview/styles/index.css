@@ -155,8 +155,21 @@
   color: var(--studio-muted);
 }
 
-.chapter h1 {
+.chapter-title {
   margin-top: auto;
+  text-align: right;
+}
+
+.chapter-label {
+  margin: 0 0 0.45rem;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  font-weight: 400;
+  color: var(--studio-muted);
+}
+
+.chapter h1 {
+  margin-top: 0;
   font-size: 4.1rem;
   line-height: 1.12;
   text-align: right;
