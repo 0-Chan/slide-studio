@@ -352,18 +352,69 @@
   justify-content: center;
 }
 
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.num-slide .pair .lcp-figure {
+  width: 19rem;
+  height: 4.9rem;
+  margin-top: 0.2rem;
+}
+
 .num-slide .fine {
-  margin: 0.4rem 0 0;
-  max-width: 34rem;
-  font-size: 0.7rem;
+  margin: 0.35rem 0 0;
+  max-width: 16rem;
+  font-size: 0.62rem;
   line-height: 1.4;
   font-weight: 400;
   color: var(--studio-muted);
 }
 
 .num-slide .big-result {
-  margin: 0.15rem 0 0;
-  font-size: 5rem;
+  margin: 0.45rem 0 0;
+  font-size: 3.05rem;
   line-height: 1;
   font-weight: 400;
+}
+
+.evidence {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.evidence > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.evidence .ph {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 12rem;
+  padding: 0.6rem;
+  border: 1.5px dashed var(--studio-muted);
+  border-radius: 0.4rem;
+  background: var(--studio-card-surface);
+  color: var(--studio-muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.evidence .fine {
+  margin: 0.35rem 0 0;
+  font-size: 0.62rem;
+  line-height: 1.35;
+  font-weight: 400;
+  color: var(--studio-muted);
 }

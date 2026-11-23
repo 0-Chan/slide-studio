@@ -9,10 +9,10 @@ onSlideEnter(() => {
 </script>
 
 <template>
-  <svg class="lcp-figure" viewBox="0 0 280 92" role="img" aria-label="LCP 3.2초에서 2.1초">
+  <svg class="lcp-figure" viewBox="0 16 280 72" role="img" aria-label="LCP 3.2초에서 2.1초">
     <defs>
       <clipPath id="lcp-num-clip">
-        <rect x="0" y="0" width="280" height="92" />
+        <rect x="0" y="16" width="280" height="72" />
       </clipPath>
     </defs>
     <g :key="play" clip-path="url(#lcp-num-clip)">

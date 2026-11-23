@@ -321,14 +321,6 @@ React Server Component에서 초기 데이터를 조회하고, 기다리는 동�
 -->
 
 ---
-class: num-slide
----
-
-<p class="kicker">1차: 이미지</p>
-<LcpFigure />
-<p class="fine">크롬 개발자 도구 Lighthouse · 데스크톱 · 여러 번 측정한 평균</p>
-
----
 class: lead
 ---
 
@@ -360,9 +352,34 @@ class: list
 class: num-slide
 ---
 
-<p class="kicker">2차: 폰트와 응답 압축</p>
-<p class="big-result accent">0.9초</p>
-<p class="fine">Lighthouse CLI · 데스크톱 시뮬레이션 · 조건별 7회 측정 중앙값 · 로컬 브랜치, 운영 미반영</p>
+<div class="pair">
+  <div>
+    <p class="kicker">1차: 이미지</p>
+    <LcpFigure />
+    <p class="fine">크롬 개발자 도구 Lighthouse · 데스크톱 · 여러 번 측정한 평균</p>
+  </div>
+  <div>
+    <p class="kicker">2차: 폰트와 응답 압축</p>
+    <p class="big-result accent">0.9초</p>
+    <p class="fine">Lighthouse CLI · 데스크톱 시뮬레이션 · 조건별 7회 측정 중앙값 · 로컬 브랜치, 운영 미반영</p>
+  </div>
+</div>
+
+---
+class: shot
+---
+
+<h1>측정 근거</h1>
+<div class="evidence">
+  <div>
+    <FilePlaceholder name="자리: 1차 Lighthouse 캡처" />
+    <p class="fine">크롬 개발자 도구 · 데스크톱 · LCP 3.2초와 2.1초</p>
+  </div>
+  <div>
+    <FilePlaceholder name="자리: 2차 Lighthouse 캡처" />
+    <p class="fine">Lighthouse CLI · 데스크톱 시뮬레이션 · LCP 0.9초</p>
+  </div>
+</div>
 
 ---
 class: recap
