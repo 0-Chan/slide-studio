@@ -57,10 +57,6 @@ class: agenda
     </li>
     <li>
       <span class="toc-no">05</span>
-      <span class="toc-name">정산 이상 징후 탐지</span>
-    </li>
-    <li>
-      <span class="toc-no">06</span>
       <span class="toc-name">제조 현장</span>
     </li>
   </ol>
@@ -414,51 +410,6 @@ class: chapter
 <div class="chapter-wrap">
   <div class="chapter-no">05</div>
   <div class="chapter-title">
-    <p class="chapter-label">더에스엠씨</p>
-    <h1 class="long">정산 이상 징후 탐지</h1>
-  </div>
-</div>
-
----
-class: lead
----
-
-<h1 class="long">1단계 규칙: 기준에서 크게 벗어난 정산 금액 선별</h1>
-
----
-class: lead
----
-
-<h1 class="long">비고란에 적힌 정당한 사유를 못 읽어 오탐이 생김</h1>
-
----
-class: lead
----
-
-<h1>2단계 <span class="accent">LLM</span>: 규칙에 걸린 항목의 비고란만 판단</h1>
-
----
-class: lead
----
-
-<h1 class="long">경고 UI와 Slack 알림</h1>
-
----
-class: recap
----
-
-<div class="recap-lines">
-  <p>AI를 어디에 쓸지 성급하게 정하지 않았다.</p>
-  <p>검증한 뒤 꼭 필요한 곳에만 최소한으로 붙였다.</p>
-</div>
-
----
-class: chapter
----
-
-<div class="chapter-wrap">
-  <div class="chapter-no">06</div>
-  <div class="chapter-title">
     <p class="chapter-label">인아오리엔탈모터</p>
     <h1>제조 현장</h1>
   </div>
@@ -504,10 +455,6 @@ class: agenda
     </li>
     <li>
       <span class="toc-no">05</span>
-      <span class="toc-name">정산 이상 징후 탐지</span>
-    </li>
-    <li>
-      <span class="toc-no">06</span>
       <span class="toc-name">제조 현장</span>
     </li>
   </ol>
