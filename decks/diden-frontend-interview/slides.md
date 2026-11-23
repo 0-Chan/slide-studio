@@ -369,12 +369,7 @@ class: chapter
 class: lead
 ---
 
-<h1 class="long">SNS 마케팅 데이터 대시보드 배포 인프라</h1>
-
----
-class: lead
----
-
+<p class="kicker">SNS 마케팅 데이터 대시보드 배포 인프라</p>
 <h1 class="long">배포 자동화, 실패해도 이전 버전 유지</h1>
 
 ---
