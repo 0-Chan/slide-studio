@@ -365,10 +365,24 @@ class: num-slide
 class: shot
 ---
 
-<h1>0.9초 측정</h1>
+<h1>폰트와 응답 압축으로 <span class="accent">0.9초</span></h1>
 <div class="evidence">
-  <img src="./public/lighthouse-2nd.png" alt="Lighthouse 성능 99, LCP 0.9초" />
-  <p class="fine">Lighthouse, 데스크탑 시뮬레이션, 로컬 측정</p>
+  <ul class="points">
+    <li><span class="n">01</span><span>본문 폰트 WOFF2</span></li>
+    <li><span class="n">02</span><span>화면에 쓰는 821자만 먼저</span></li>
+    <li><span class="n">03</span><span>제목 폰트도 WOFF2, 미리 받기는 유지</span></li>
+    <li>
+      <span class="n">04</span>
+      <span>
+        <span class="line">HTML·JS·CSS gzip</span>
+        <span class="desc">1.17MB에서 0.59MB</span>
+      </span>
+    </li>
+  </ul>
+  <div class="evidence-shot">
+    <img src="./public/lighthouse-2nd.png" alt="Lighthouse 성능 99, LCP 0.9초" />
+    <p class="fine">Lighthouse, 데스크탑 시뮬레이션, 로컬 측정</p>
+  </div>
 </div>
 
 ---
