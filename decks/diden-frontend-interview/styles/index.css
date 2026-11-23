@@ -93,16 +93,16 @@
 
 .agenda h1 {
   margin: 0;
-  font-size: 3.7rem;
+  font-size: 3.2rem;
   line-height: 1.05;
 }
 
 .agenda ol {
   list-style: none;
   margin: 0;
-  padding: 0 0 0.35rem;
+  padding: 0 0 0.15rem;
   display: grid;
-  gap: 1.45rem;
+  gap: 0.62rem;
 }
 
 .agenda li {
@@ -121,8 +121,8 @@
 
 .toc-name {
   display: block;
-  font-size: 1.12rem;
-  line-height: 1.35;
+  font-size: 0.98rem;
+  line-height: 1.3;
   font-weight: 400;
 }
 
@@ -341,9 +341,38 @@
 .recap-lines p {
   margin: 0.45rem 0;
   color: #f4f4f5;
-  font-size: 1.85rem;
+  font-size: 1.7rem;
   line-height: 1.4;
   font-weight: 400;
+}
+
+.badge {
+  margin: 1.1rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  font-weight: 400;
+  color: #c4c4cc;
+}
+
+.close {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lead .close h1 {
+  margin: 0;
+  font-size: 1.85rem;
+  line-height: 1.45;
+  font-weight: 400;
+}
+
+.slidev-layout .close .close-ask {
+  margin: 1.6rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--studio-muted);
 }
 
 .num-slide.slidev-layout {
@@ -372,6 +401,7 @@
 
 .pair .kicker.right,
 .pair .big-result,
+.pair .result-line,
 .pair .fine.right {
   grid-column: 2;
 }
@@ -381,7 +411,8 @@
 }
 
 .pair .lcp-figure,
-.pair .big-result {
+.pair .big-result,
+.pair .result-line {
   grid-row: 2;
 }
 
@@ -405,10 +436,11 @@
   color: var(--studio-muted);
 }
 
-.num-slide .big-result {
+.num-slide .big-result,
+.num-slide .result-line {
   margin: 0;
-  font-size: 3.05rem;
-  line-height: 1;
+  font-size: 2.15rem;
+  line-height: 1.15;
   font-weight: 400;
 }
 

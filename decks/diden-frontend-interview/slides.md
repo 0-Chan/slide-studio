@@ -53,11 +53,39 @@ class: agenda
         <span class="toc-name">SNS 마케팅 데이터 대시보드</span>
       </span>
     </li>
+    <li>
+      <span class="toc-no">03</span>
+      <span>
+        <span class="toc-desc">더에스엠씨</span>
+        <span class="toc-name">사내 AI 챗봇</span>
+      </span>
+    </li>
+    <li>
+      <span class="toc-no">04</span>
+      <span>
+        <span class="toc-desc">더에스엠씨</span>
+        <span class="toc-name">AWS 인프라와 배포</span>
+      </span>
+    </li>
+    <li>
+      <span class="toc-no">05</span>
+      <span>
+        <span class="toc-desc">더에스엠씨</span>
+        <span class="toc-name">정산 이상 징후 탐지</span>
+      </span>
+    </li>
+    <li>
+      <span class="toc-no">06</span>
+      <span>
+        <span class="toc-desc">인아오리엔탈모터</span>
+        <span class="toc-name">제조 현장</span>
+      </span>
+    </li>
   </ol>
 </div>
 
 <!--
-개요 7장부터 13장은 아직 덱에 없다. 차례에는 있는 두 장만 적는다.
+차례는 개요 1장부터 10장까지의 프로젝트다. 11장 마무리는 차례에 넣지 않는다.
 -->
 
 ---
@@ -331,21 +359,10 @@ class: lead
 class: list
 ---
 
-<h1>본문 폰트</h1>
+<h1>해결</h1>
 <ul class="points">
-  <li><span class="n">01</span><span>WOFF2로 변환</span></li>
-  <li><span class="n">02</span><span>화면에 쓰는 821자만 담은 작은 폰트를 먼저</span></li>
-  <li><span class="n">03</span><span>전체 폰트는 필요할 때</span></li>
-</ul>
-
----
-class: list
----
-
-<h1 class="long">제목 폰트와 응답 압축</h1>
-<ul class="points">
-  <li><span class="n">01</span><span>제목 폰트도 WOFF2로, 미리 받기는 유지</span></li>
-  <li><span class="n">02</span><span>HTML·JS·CSS 응답 gzip 압축, 첫 화면 전송량 1.17MB → 0.59MB</span></li>
+  <li><span class="n">01</span><span>폰트 경량화: WOFF2, 화면에 쓰는 글자만 먼저</span></li>
+  <li><span class="n">02</span><span>HTML·JS·CSS 응답 gzip, 전송량 1.17MB → 0.59MB</span></li>
 </ul>
 
 ---
@@ -356,25 +373,9 @@ class: num-slide
   <p class="kicker left">1차: 이미지</p>
   <p class="kicker right">2차: 폰트와 응답 압축</p>
   <LcpFigure />
-  <p class="big-result accent">0.9초</p>
+  <p class="result-line">3.2초 → <span class="accent">0.9초</span></p>
   <p class="fine left">크롬 개발자 도구 Lighthouse · 데스크톱 · 여러 번 측정한 평균</p>
-  <p class="fine right">Lighthouse CLI · 데스크톱 시뮬레이션 · 조건별 7회 측정 중앙값 · 로컬 브랜치, 운영 미반영</p>
-</div>
-
----
-class: shot
----
-
-<h1>폰트와 응답 압축으로 <span class="accent">0.9초</span></h1>
-<div class="evidence">
-  <ul class="points">
-    <li><span class="n">01</span><span>폰트 경량화: WOFF2, 화면에 쓰는 글자만 먼저</span></li>
-    <li><span class="n">02</span><span>응답 gzip 압축: 전송량 1.17MB에서 0.59MB</span></li>
-  </ul>
-  <div class="evidence-shot">
-    <img src="./public/lighthouse-2nd.png" alt="Lighthouse 성능 99, LCP 0.9초" />
-    <p class="fine">Lighthouse, 데스크탑 시뮬레이션, 로컬 측정</p>
-  </div>
+  <p class="fine right">개발 직후 기준, 두 가지 적용 후. Lighthouse CLI · 데스크톱 시뮬레이션 · 조건별 7회 측정 중앙값 · 로컬 브랜치, 운영 미반영</p>
 </div>
 
 ---
@@ -385,6 +386,209 @@ class: recap
   <p>2주 보고서 폐지, 담당 2명에서 관리자 1명.</p>
   <p>같은 조회수라도 플랫폼마다 센 방식이 달랐다.</p>
   <p>합치기 전에 무엇을 셌는지 확인하고, 다르면 코드에서 갈라 둔다.</p>
+</div>
+
+---
+class: chapter
+---
+
+<div class="chapter-wrap">
+  <div class="chapter-no">03</div>
+  <div class="chapter-title">
+    <p class="chapter-label">더에스엠씨</p>
+    <h1>사내 AI 챗봇</h1>
+  </div>
+</div>
+
+---
+class: lead
+---
+
+<h1 class="long">사내 검색과 외부 AI 모델을 한곳에서 쓰는 채팅</h1>
+
+---
+class: list
+---
+
+<h1>원인</h1>
+<ul class="points">
+  <li><span class="n">01</span><span>대화를 열면 모든 메시지를 한꺼번에 불러와 그림</span></li>
+  <li><span class="n">02</span><span>스트리밍 중 바뀌지 않은 마크다운 블록까지 반복 렌더링</span></li>
+</ul>
+
+---
+class: lead
+---
+
+<h1 class="long">최근 메시지 먼저, 스크롤하면 이전 메시지 추가</h1>
+
+---
+class: lead
+---
+
+<h1><span class="accent">21개 → 1개</span></h1>
+<p class="one-line">커밋당 렌더 시간 평균 11.5ms에서 4.4ms</p>
+<p class="fine">React DevTools Profiler · 개발 빌드 · 같은 더미 응답 재현 측정</p>
+
+---
+class: shot
+---
+
+<h1>적용 전</h1>
+<div class="frame">
+  <img src="./public/profiler-before-flame.png" alt="적용 전 Profiler. 마크다운 블록이 모두 다시 그려짐" />
+</div>
+
+---
+class: shot
+---
+
+<h1>적용 후</h1>
+<div class="frame">
+  <img src="./public/profiler-after-flame.png" alt="적용 후 Profiler. 끝난 블록은 회색이고 하나만 색이 있음" />
+</div>
+
+---
+class: recap
+---
+
+<div class="recap-lines">
+  <p>느린 이유를 짐작으로 고치면 시간만 든다.</p>
+  <p>숫자로 원인을 확인하고 나서야 맞는 방향이 보였다.</p>
+</div>
+
+---
+class: chapter
+---
+
+<div class="chapter-wrap">
+  <div class="chapter-no">04</div>
+  <div class="chapter-title">
+    <p class="chapter-label">더에스엠씨</p>
+    <h1 class="long">AWS 인프라와 배포</h1>
+  </div>
+</div>
+
+---
+class: lead
+---
+
+<h1 class="long">SNS 마케팅 데이터 대시보드 배포 인프라</h1>
+
+---
+class: lead
+---
+
+<h1 class="long">배포 자동화, 실패해도 이전 버전 유지</h1>
+
+---
+class: list
+---
+
+<h1>시행착오</h1>
+<ul class="points">
+  <li><span class="n">01</span><span>AWS 콘솔 수작업</span></li>
+  <li><span class="n">02</span><span>관리가 어긋남</span></li>
+  <li><span class="n">03</span><span>Terraform. 백엔드 개발자의 기존 구성을 참고하고 코드 리뷰 받음</span></li>
+</ul>
+
+---
+class: shot
+---
+
+<h1>배포 파이프라인</h1>
+<div class="frame">
+  <img src="./public/slide8_aws_deploy.png" alt="GitHub Actions에서 ECR, Prisma 마이그레이션, CodeDeploy, ECS Fargate로 이어지는 배포" />
+</div>
+
+---
+class: shot
+---
+
+<h1>실패하면 배포를 멈추고 롤백</h1>
+<div class="frame">
+  <img src="./public/slide8_aws_rollback.png" alt="마이그레이션 실패 시 배포 중단과 배포 실패 시 자동 롤백" />
+</div>
+
+---
+class: recap
+---
+
+<div class="recap-lines">
+  <p>되돌릴 길이 있어야 자주 배포할 수 있다.</p>
+</div>
+<p class="badge">AWS SAA-C03 취득, 2026.10</p>
+
+---
+class: chapter
+---
+
+<div class="chapter-wrap">
+  <div class="chapter-no">05</div>
+  <div class="chapter-title">
+    <p class="chapter-label">더에스엠씨</p>
+    <h1 class="long">정산 이상 징후 탐지</h1>
+  </div>
+</div>
+
+---
+class: lead
+---
+
+<h1 class="long">1단계 규칙: 기준에서 크게 벗어난 정산 금액 선별</h1>
+
+---
+class: lead
+---
+
+<h1 class="long">비고란에 적힌 정당한 사유를 못 읽어 오탐이 생김</h1>
+
+---
+class: lead
+---
+
+<h1>2단계 <span class="accent">LLM</span>: 규칙에 걸린 항목의 비고란만 판단</h1>
+
+---
+class: lead
+---
+
+<h1 class="long">경고 UI와 Slack 알림</h1>
+
+---
+class: recap
+---
+
+<div class="recap-lines">
+  <p>AI를 어디에 쓸지 성급하게 정하지 않았다.</p>
+  <p>검증한 뒤 꼭 필요한 곳에만 최소한으로 붙였다.</p>
+</div>
+
+---
+class: chapter
+---
+
+<div class="chapter-wrap">
+  <div class="chapter-no">06</div>
+  <div class="chapter-title">
+    <p class="chapter-label">인아오리엔탈모터</p>
+    <h1>제조 현장</h1>
+  </div>
+</div>
+
+---
+class: lead
+---
+
+<h1 class="long">제조 현장에서 협동로봇을 직접 설치하고 검증</h1>
+
+---
+class: lead
+---
+
+<div class="close">
+  <h1>디든로보틱스의 로봇을 다루는 분들에게도 정말 도움이 되는 플랫폼을 제공하고 싶습니다</h1>
+  <p class="close-ask">질문 받겠습니다</p>
 </div>
 
 ---
@@ -406,6 +610,34 @@ class: agenda
       <span>
         <span class="toc-desc">더에스엠씨</span>
         <span class="toc-name">SNS 마케팅 데이터 대시보드</span>
+      </span>
+    </li>
+    <li>
+      <span class="toc-no">03</span>
+      <span>
+        <span class="toc-desc">더에스엠씨</span>
+        <span class="toc-name">사내 AI 챗봇</span>
+      </span>
+    </li>
+    <li>
+      <span class="toc-no">04</span>
+      <span>
+        <span class="toc-desc">더에스엠씨</span>
+        <span class="toc-name">AWS 인프라와 배포</span>
+      </span>
+    </li>
+    <li>
+      <span class="toc-no">05</span>
+      <span>
+        <span class="toc-desc">더에스엠씨</span>
+        <span class="toc-name">정산 이상 징후 탐지</span>
+      </span>
+    </li>
+    <li>
+      <span class="toc-no">06</span>
+      <span>
+        <span class="toc-desc">인아오리엔탈모터</span>
+        <span class="toc-name">제조 현장</span>
       </span>
     </li>
   </ol>
