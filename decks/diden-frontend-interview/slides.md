@@ -243,13 +243,13 @@ class: lead
 
 <h1 class="long">첫 화면이 한동안 비어 있었습니다</h1>
 <ul class="points">
-  <li><span class="n">01</span><span>화면 밖 이미지까지 처음에 한꺼번에 요청했습니다. 첫 화면만 바로 받고, 밖은 나중에 받게 했습니다.</span></li>
-  <li><span class="n">02</span><span>React Server Component에서 초기 데이터를 조회하고, 기다리는 동안 스켈레톤으로 화면 구조와 로딩 상태를 보여 줬습니다.</span></li>
-  <li><span class="n">03</span><span>본문 폰트는 OTF 원본이었습니다. 화면에 쓰는 글자만 WOFF2로 먼저 받고, HTML·JS·CSS는 gzip으로 1.17MB에서 0.59MB가 됐습니다.</span></li>
+  <li><span class="n">01</span><span>화면 밖 이미지는 나중에 받음</span></li>
+  <li><span class="n">02</span><span>초기 조회, 기다리는 동안 스켈레톤</span></li>
+  <li><span class="n">03</span><span>쓰는 글자만 WOFF2, gzip 1.17MB에서 0.59MB</span></li>
 </ul>
 
 <!--
-React Server Component에서 초기 데이터를 조회하고, 기다리는 동안 스켈레톤 UI로 화면 구조와 로딩 상태를 보여 준다.
+화면 밖 이미지까지 처음에 한꺼번에 요청했습니다. 첫 화면만 바로 받고, 밖은 나중에 받게 했습니다. React Server Component에서 초기 데이터를 조회하고, 기다리는 동안 스켈레톤 UI로 화면 구조와 로딩 상태를 보여 줍니다. 본문 폰트는 OTF 원본이었습니다. 화면에 쓰는 글자만 WOFF2로 먼저 받고, HTML·JS·CSS는 gzip으로 1.17MB에서 0.59MB가 됐습니다.
 -->
 
 ---
