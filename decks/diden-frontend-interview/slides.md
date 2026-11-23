@@ -241,73 +241,28 @@ class: shot
 class: lead
 ---
 
-<h1 class="long">콘텐츠가 많은 목록, 첫 화면이 한동안 빈 채로</h1>
-
----
-class: lead
----
-
-<p class="kicker">원인</p>
-<h1 class="long">화면 밖 이미지까지 처음에 한꺼번에 요청</h1>
-
----
-class: list
----
-
-<h1>해결</h1>
+<h1 class="long">첫 화면이 한동안 비어 있었습니다</h1>
 <ul class="points">
-  <li><span class="n">01</span><span>첫 화면 이미지는 바로</span></li>
-  <li><span class="n">02</span><span>화면 밖만 지연 로딩</span></li>
+  <li><span class="n">01</span><span>화면 밖 이미지까지 처음에 한꺼번에 요청했습니다. 첫 화면만 바로 받고, 밖은 나중에 받게 했습니다.</span></li>
+  <li><span class="n">02</span><span>React Server Component에서 초기 데이터를 조회하고, 기다리는 동안 스켈레톤으로 화면 구조와 로딩 상태를 보여 줬습니다.</span></li>
+  <li><span class="n">03</span><span>본문 폰트는 OTF 원본이었습니다. 화면에 쓰는 글자만 WOFF2로 먼저 받고, HTML·JS·CSS는 gzip으로 1.17MB에서 0.59MB가 됐습니다.</span></li>
 </ul>
-
----
-class: lead
----
-
-<h1 class="long">React Server Component 초기 조회와 스켈레톤 UI</h1>
 
 <!--
 React Server Component에서 초기 데이터를 조회하고, 기다리는 동안 스켈레톤 UI로 화면 구조와 로딩 상태를 보여 준다.
 -->
 
 ---
-class: lead
----
-
-<p class="kicker">원인</p>
-<h1 class="long">첫 화면에서 본문 폰트 원본(OTF)을 그대로 받음</h1>
-
----
-class: list
----
-
-<h1>해결</h1>
-<ul class="points">
-  <li><span class="n">01</span><span>폰트 경량화: WOFF2, 화면에 쓰는 글자만 먼저</span></li>
-  <li><span class="n">02</span><span>HTML·JS·CSS 응답 gzip, 전송량 1.17MB → 0.59MB</span></li>
-</ul>
-
----
 class: num-slide
 ---
 
 <div class="pair">
-  <p class="kicker left">1차: 이미지</p>
-  <p class="kicker right">2차: 폰트와 응답 압축</p>
+  <p class="kicker left">1차, 이미지</p>
+  <p class="kicker right">2차, 폰트와 압축</p>
   <LcpFigure />
-  <p class="result-line">3.2초 → <span class="accent">0.9초</span></p>
-  <p class="fine left">크롬 개발자 도구 Lighthouse · 데스크톱 · 여러 번 측정한 평균</p>
-  <p class="fine right">개발 직후 기준, 두 가지 적용 후. Lighthouse CLI · 데스크톱 시뮬레이션 · 조건별 7회 측정 중앙값 · 로컬 브랜치, 운영 미반영</p>
-</div>
-
----
-class: shot
----
-
-<h1>0.9초 측정 근거</h1>
-<div class="evidence">
-  <img src="./public/lighthouse-2nd.png" alt="Lighthouse 성능 99, LCP 0.9초" />
-  <p class="fine">Lighthouse, 데스크탑 시뮬레이션, 로컬 측정</p>
+  <p class="result-line">3.2초에서 <span class="accent">0.9초</span></p>
+  <p class="fine left">개발자 도구 Lighthouse, 데스크톱, 여러 번 측정한 평균</p>
+  <p class="fine right">개발 직후 기준, 두 가지 적용 후. Lighthouse CLI, 데스크톱 시뮬레이션, 조건별 7회 중앙값. 로컬 브랜치, 운영 미반영</p>
 </div>
 
 ---
