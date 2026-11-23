@@ -167,9 +167,17 @@ class: shot
 ---
 
 <h1>통합 성과</h1>
-<div class="frame">
-  <img src="./public/sns-home.png" alt="YouTube, Instagram 성과를 한 화면에서 조회하고 비교하는 B2B 대시보드" />
-  <p class="corner">YouTube, Instagram 성과를 한 화면에서 조회하고 비교하는 B2B 대시보드</p>
+<div class="shot-pair">
+  <div class="frame">
+    <div class="crop">
+      <img src="./public/sns-home.png" alt="YouTube, Instagram 성과를 한 화면에서 조회하고 비교하는 B2B 대시보드" />
+    </div>
+    <p class="corner">통합 화면</p>
+  </div>
+  <div class="frame">
+    <img src="./public/sns-compare.png" alt="기간 비교 추이 차트" />
+    <p class="corner">기간 비교</p>
+  </div>
 </div>
 
 ---
