@@ -92,7 +92,7 @@ class: shot
 class: lead
 ---
 
-<h1>양산 규모로 늘어난 점검 기록</h1>
+<h1 class="long">로봇은 늘었는데 점검 기록은<br>여전히 손으로 적고 있었습니다</h1>
 
 ---
 class: list
