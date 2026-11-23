@@ -119,35 +119,11 @@ class: lead
 class: list
 ---
 
-<h1>점검 항목</h1>
-<p class="one-line">LiDAR · RGB-D 카메라 · LED·스피커 · 구동부</p>
-
----
-class: list
----
-
-<h1>판정 방식을 바꿈</h1>
-<ul class="points">
-  <li><span class="n">01</span><span>순간값 하나로 통과 판정</span></li>
-  <li><span class="n">02</span><span>출하 후 현장 이슈</span></li>
-  <li><span class="n">03</span><span>일정 구간의 평균값으로 판정</span></li>
-</ul>
-
----
-class: list
----
-
 <h1>웹 점검 도구</h1>
 <ul class="points">
-  <li><span class="n">01</span><span>웹 입력 폼, 통과 여부 먼저</span></li>
-  <li>
-    <span class="n">02</span>
-    <span>
-      <span class="line">실시간 ROS 토픽 구독, 갱신 주기 조절</span>
-      <span class="desc">rosbridge, roslibjs</span>
-    </span>
-  </li>
-  <li><span class="n">03</span><span>로봇별 점검 보고서</span></li>
+  <li><span class="n">01</span><span>점검 대상: LiDAR · RGB-D 카메라 · LED·스피커 · 구동부</span></li>
+  <li><span class="n">02</span><span>판정은 순간값에서 구간 평균으로</span></li>
+  <li><span class="n">03</span><span>통과 여부 먼저, 실시간 ROS 토픽, 로봇별 보고서</span></li>
 </ul>
 
 <!--
