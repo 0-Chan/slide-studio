@@ -438,33 +438,3 @@ class: lead
   <h1>디든로보틱스의 로봇을 다루는 분들에게도 정말 도움이 되는 플랫폼을 제공하고 싶습니다</h1>
   <p class="close-ask">질문 받겠습니다</p>
 </div>
-
----
-class: agenda
----
-
-<div class="agenda-grid">
-  <h1>차례</h1>
-  <ol>
-    <li>
-      <span class="toc-no">01</span>
-      <span class="toc-name">양산 로봇 점검 대시보드</span>
-    </li>
-    <li>
-      <span class="toc-no">02</span>
-      <span class="toc-name">SNS 마케팅 데이터 대시보드</span>
-    </li>
-    <li>
-      <span class="toc-no">03</span>
-      <span class="toc-name">사내 AI 챗봇</span>
-    </li>
-    <li>
-      <span class="toc-no">04</span>
-      <span class="toc-name">AWS 인프라와 배포</span>
-    </li>
-    <li>
-      <span class="toc-no">05</span>
-      <span class="toc-name">제조 현장</span>
-    </li>
-  </ol>
-</div>
